@@ -56,7 +56,8 @@ button[type="reset"] {
 
 /* Style for link */
 a {
-    display: block;
+    text-align: center;
+    display: block; /* Ensures it stays below the form */
     margin-top: 10px;
     color: #00f;
     text-decoration: none;
