@@ -1,103 +1,64 @@
-/* General reset */
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Body styling for a calm and centered layout */
+/* Center the form on the page */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, rgba(173, 216, 230, 0.5), rgba(224, 255, 255, 0.5));
-    color: #333;
-    margin: 0;
-    text-align: center;  /* Aligns text inside the body to center */
+    background-color: #f0f8ff; /* Light background */
+    font-family: Arial, sans-serif;
 }
 
-/* Center the form with a semi-transparent background */
+/* Form styling */
 form {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: white;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center; /* Ensures text inside the form is centered */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
-/* Heading styles */
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* Other elements follow the same pattern */
-p {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-hr {
-    border: 0.5px solid #ddd;
-    margin-bottom: 20px;
-}
-
-/* Label styling */
-label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-    text-align: left;  /* Align labels to the left inside the centered form */
-}
-
-/* Input styling with transparency */
+/* Style for inputs */
 input[type="text"], input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 8px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Checkbox */
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-/* Button styles */
+/* Button styling */
 button {
-    padding: 10px 15px;
+    padding: 10px;
+    width: 48%;
+    margin: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #87CEFA;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
     color: white;
-    font-size: 16px;
 }
 
 button[type="reset"] {
     background-color: #f44336;
-    margin-right: 10px;
+    color: white;
 }
 
-button:hover {
-    opacity: 0.9;
-}
-
-/* Link style */
+/* Style for link */
 a {
     display: block;
     margin-top: 10px;
-    font-size: 14px;
-    color: #87CEFA;
+    color: #00f;
     text-decoration: none;
 }
 
